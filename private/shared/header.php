@@ -239,7 +239,7 @@
     console.log("test");
     window.sessionStorage.setItem("userId", userId);
 
-    window.location = "http://localhost:8080/AAA/public/views/update_user.php";
+    window.location = "https://anx-it.herokuapp.com/public/views/update_user.php";
   }
 </script>
 
