@@ -1,6 +1,6 @@
 <?php 
 
-	include '../../../private/initialize.php';
+	include '../../private/initialize.php';
 
 	$user = new User();
 
