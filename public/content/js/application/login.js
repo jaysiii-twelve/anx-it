@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-login",
     data : {
-        url_root : "/AAA/public/controller/login/",
+        url_root : "/public/controller/login/",
 
         emailAddress : '',
         password : '',
