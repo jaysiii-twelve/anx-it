@@ -72,15 +72,15 @@ var vm = new Vue({
 
             if(this.errors.length == 0) {
                 if(response.data.userTypeId == 1 || response.data.userTypeId == 4) {
-                    window.location = "http://localhost:8080/AAA/public/views/admin/dashboard.php";
+                    window.location = "https://anx-it.herokuapp.com/public/views/admin/dashboard.php";
                 }
 
                 if (response.data.userTypeId == 2) {
-                    window.location = "http://localhost:8080/AAA/public/views/psychiatrist/dashboard.php";
+                    window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/dashboard.php";
                 }
 
                 if(response.data.userTypeId == 3) {
-                    window.location = "http://localhost:8080/AAA/public/views/dashboard.php";
+                    window.location = "https://anx-it.herokuapp.com/public/views/dashboard.php";
                 }
             }
             
@@ -88,7 +88,7 @@ var vm = new Vue({
 
         // redirect methods
         redirectToRegistrationForm : function() {
-            window.location = "http://localhost:8080/AAA/public/views/registration.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/registration.php";
         }
 
     },
