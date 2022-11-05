@@ -44,14 +44,14 @@ Vue.component('k-management-datatable', {
 		redirectToDetails : function(kesslerId) {
 			window.sessionStorage.setItem("kesslerId", kesslerId);
 
-			window.location = "http://localhost:8080/AAA/public/views/psychiatrist/kessler_survey_details.php";
+			window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/kessler_survey_details.php";
 		},
 		redirectToSurveyReport : function(kesslerId) {
 			console.log(kesslerId);
 
 			window.sessionStorage.setItem("kesslerId", kesslerId);
 
-			window.open("http://localhost:8080/AAA/public/views/psychiatrist/kessler_survey_recommendation.php");
+			window.open("https://anx-it.herokuapp.com/public/views/psychiatrist/kessler_survey_recommendation.php");
 		}
 	},
 	updated() {
@@ -62,7 +62,7 @@ Vue.component('k-management-datatable', {
 var vm = new Vue({
     el : "#vue-kessler-survey",
     data : {
-        url_root : "/AAA/public/controller/psychiatrist/kessler/",
+        url_root : "/public/controller/psychiatrist/kessler/",
 
         ks: [],
 

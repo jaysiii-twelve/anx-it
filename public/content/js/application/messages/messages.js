@@ -41,7 +41,7 @@ Vue.component('user-management-datatable', {
 			window.sessionStorage.setItem("firstName", firstName);
 			window.sessionStorage.setItem("lastName", lastName);
 
-			window.location = "http://localhost:8080/AAA/public/views/messages_details.php";
+			window.location = "https://anx-it.herokuapp.com/public/views/messages_details.php";
 		}
 	},
 	updated() {
@@ -53,7 +53,7 @@ Vue.component('user-management-datatable', {
 var vm = new Vue({
     el : "#vue-messages",
     data : {
-        url_root : "/AAA/public/controller/messages/",
+        url_root : "/public/controller/messages/",
 
         emailAddress : '',
         password : '',

@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-kessler-recommendation",
     data : {
-        url_root : "/AAA/public/controller/kessler/",
+        url_root : "/public/controller/kessler/",
 
 		kesslerDetails : [],
 		
@@ -25,7 +25,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/kessler_10.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/kessler_10.php";
 				}
 			})
         },

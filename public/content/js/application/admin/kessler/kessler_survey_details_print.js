@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-kessler-survey-details-print",
     data : {
-        url_root : "/AAA/public/controller/admin/kessler/",
+        url_root : "/public/controller/admin/kessler/",
 
 		kesslerDetails : []
     },
@@ -20,7 +20,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/admin/kessler_survey.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/admin/kessler_survey.php";
 				}
 			})
         },
@@ -45,7 +45,7 @@ var vm = new Vue({
         },
 
 		printPage: function() {
-			window.open("http://localhost:8080/AAA/public/views/kessler_10_details_print.php");
+			window.open("https://anx-it.herokuapp.com/public/views/kessler_10_details_print.php");
 		}
     },
     created() {

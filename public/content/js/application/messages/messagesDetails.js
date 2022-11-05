@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-messages-details",
     data : {
-        url_root : "/AAA/public/controller/psychiatrist/messages/",
+        url_root : "/public/controller/psychiatrist/messages/",
 
         messages: [],
 

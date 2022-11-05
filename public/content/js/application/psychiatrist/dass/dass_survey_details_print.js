@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-dass-survey-details-print",
     data : {
-        url_root : "/AAA/public/controller/psychiatrist/dass/",
+        url_root : "/public/controller/psychiatrist/dass/",
 
 		dassDetails : []
     },
@@ -20,7 +20,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/psychiatrist/dass_survey.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/dass_survey.php";
 				}
 			})
         },

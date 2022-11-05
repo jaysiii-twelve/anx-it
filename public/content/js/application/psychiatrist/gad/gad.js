@@ -156,7 +156,7 @@ Vue.component('gad-questionnaire-datatable', {
 var vm = new Vue({
     el : "#vue-gad",
     data : {
-        url_root : "/AAA/public/controller/psychiatrist/gad/",
+        url_root : "/public/controller/psychiatrist/gad/",
 
         questionnaires: [],
 

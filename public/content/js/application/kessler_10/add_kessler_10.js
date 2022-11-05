@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-add-kessler-10",
     data : {
-        url_root : "/AAA/public/controller/kessler/",
+        url_root : "/public/controller/kessler/",
 
 		questionnaires: [],
 
@@ -22,7 +22,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/kessler_10.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/kessler_10.php";
 				}
 			})
         },
@@ -75,7 +75,7 @@ var vm = new Vue({
 						timer : 2000,
 						showConfirmButton : false
 					}).then(() => {
-						window.location = "http://localhost:8080/AAA/public/views/kessler_10.php";
+						window.location = "https://anx-it.herokuapp.com/public/views/kessler_10.php";
 					});
 				}, 1000);
 				

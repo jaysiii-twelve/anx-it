@@ -40,14 +40,14 @@ Vue.component('k-management-datatable', {
 		redirectToDetails : function(kesslerId) {
 			window.sessionStorage.setItem("kesslerId", kesslerId);
 
-			window.location = "http://localhost:8080/AAA/public/views/kessler_10_details.php";
+			window.location = "https://anx-it.herokuapp.com/public/views/kessler_10_details.php";
 		},
 		redirectToSurveyReport : function(kesslerId) {
 			console.log(kesslerId);
 
 			window.sessionStorage.setItem("kesslerId", kesslerId);
 
-			window.open("http://localhost:8080/AAA/public/views/kessler_10_recommendation.php");
+			window.open("https://anx-it.herokuapp.com/public/views/kessler_10_recommendation.php");
 		}
 	},
 	updated() {
@@ -58,7 +58,7 @@ Vue.component('k-management-datatable', {
 var vm = new Vue({
     el : "#vue-k",
     data : {
-        url_root : "/AAA/public/controller/kessler/",
+        url_root : "/public/controller/kessler/",
 
         ks: [],
 
@@ -85,7 +85,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/add_kessler_10.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/add_kessler_10.php";
 				}
 			})
 		}

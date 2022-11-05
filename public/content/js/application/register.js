@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-register",
     data : {
-        url_root : "/AAA/public/controller/register/",
+        url_root : "/public/controller/register/",
 
         firstName : '',
         middleName : '',
@@ -98,7 +98,7 @@ var vm = new Vue({
                         showConfirmButton : false
                     }).then(() => {
                         vm.is_added = false;
-                        window.location = "http://localhost:8080/AAA/public/views/login.php";
+                        window.location = "https://anx-it.herokuapp.com/public/views/login.php";
                     });
                 }, 3000);
             })

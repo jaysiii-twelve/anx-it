@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-update-user",
     data : {
-        url_root : "/AAA/public/controller/admin/user/",
+        url_root : "/public/controller/admin/user/",
 
         userId: '',
         firstName : '',
@@ -116,7 +116,7 @@ var vm = new Vue({
                         timer : 3000,
                         showConfirmButton : false
                     }).then(() => {
-                        window.location = "http://localhost:8080/AAA/public/views/psychiatrist/dashboard.php";
+                        window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/dashboard.php";
                     });
                 }, 3000);
             })
@@ -270,7 +270,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/psychiatrist/dashboard.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/dashboard.php";
 				}
 			})
         },

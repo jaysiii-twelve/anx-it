@@ -41,7 +41,7 @@ Vue.component('user-management-datatable', {
 var vm = new Vue({
     el : "#vue-registration-list",
     data : {
-        url_root : "/AAA/public/controller/admin/user/",
+        url_root : "/public/controller/admin/user/",
 
         users: [],
         

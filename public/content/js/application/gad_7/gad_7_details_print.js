@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-gad-details-print",
     data : {
-        url_root : "/AAA/public/controller/gad_7/",
+        url_root : "/public/controller/gad_7/",
 
 		gadDetails : []
 
@@ -21,7 +21,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/gad_7.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/gad_7.php";
 				}
 			})
         },
@@ -46,7 +46,7 @@ var vm = new Vue({
         },
 
 		printPage: function() {
-			window.open("http://localhost:8080/AAA/public/views/gad_details_print.php");
+			window.open("https://anx-it.herokuapp.com/public/views/gad_details_print.php");
 		}
     },
     created() {

@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-kessler-survey-details",
     data : {
-        url_root : "/AAA/public/controller/psychiatrist/kessler/",
+        url_root : "/public/controller/psychiatrist/kessler/",
 
 		kesslerDetails : []
     },
@@ -20,7 +20,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/psychiatrist/kessler_survey.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/kessler_survey.php";
 				}
 			})
         },
@@ -33,7 +33,7 @@ var vm = new Vue({
         },
 
 		printPage: function() {
-			window.open("http://localhost:8080/AAA/public/views/psychiatrist/kessler_survey_details_print.php");
+			window.open("https://anx-it.herokuapp.com/public/views/psychiatrist/kessler_survey_details_print.php");
 		}
     },
     created() {

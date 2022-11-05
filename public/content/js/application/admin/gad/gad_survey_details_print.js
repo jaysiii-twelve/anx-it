@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-gad-survey-details-print",
     data : {
-        url_root : "/AAA/public/controller/admin/gad/",
+        url_root : "/public/controller/admin/gad/",
 
 		gadDetails : []
 
@@ -21,7 +21,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/admin/gad_survey.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/admin/gad_survey.php";
 				}
 			})
         },

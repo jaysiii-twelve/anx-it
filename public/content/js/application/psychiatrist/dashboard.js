@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-dashboard",
     data : {
-        url_root : "/AAA/public/controller/psychiatrist/dashboard/",
+        url_root : "/public/controller/psychiatrist/dashboard/",
 
         emailAddress : '',
         password : '',
@@ -49,13 +49,13 @@ var vm = new Vue({
 			});
         },
         redirectToGadSurvey : function() {
-            window.location = "http://localhost:8080/AAA/public/views/psychiatrist/gad_survey.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/gad_survey.php";
         },
         redirectToDassSurvey : function() {
-            window.location = "http://localhost:8080/AAA/public/views/psychiatrist/dass_survey.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/dass_survey.php";
         },
         redirectToKesslerSurvey : function() {
-            window.location = "http://localhost:8080/AAA/public/views/psychiatrist/kessler_survey.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/psychiatrist/kessler_survey.php";
         },
 
     },

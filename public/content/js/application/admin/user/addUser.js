@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-add-user",
     data : {
-        url_root : "/AAA/public/controller/admin/user/",
+        url_root : "/public/controller/admin/user/",
 
         firstName : '',
         middleName : '',
@@ -50,7 +50,7 @@ var vm = new Vue({
                         showConfirmButton : false
                     }).then(() => {
                         vm.is_added = false;
-                        window.location = "http://localhost:8080/AAA/public/views/admin/user.php";
+                        window.location = "https://anx-it.herokuapp.com/public/views/admin/user.php";
                     });
                 }, 3000);
             })
@@ -193,7 +193,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/gad_7.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/gad_7.php";
 				}
 			})
         },

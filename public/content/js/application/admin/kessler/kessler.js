@@ -160,7 +160,7 @@ Vue.component('kessler-questionnaire-datatable', {
 var vm = new Vue({
     el : "#vue-kessler",
     data : {
-        url_root : "/AAA/public/controller/admin/kessler/",
+        url_root : "/public/controller/admin/kessler/",
 
         questionnaires: [],
 

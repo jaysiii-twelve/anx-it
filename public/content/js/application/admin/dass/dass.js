@@ -156,7 +156,7 @@ Vue.component('dass-questionnaire-datatable', {
 var vm = new Vue({
     el : "#vue-dass",
     data : {
-        url_root : "/AAA/public/controller/admin/dass/",
+        url_root : "/public/controller/admin/dass/",
 
         questionnaires: [],
 

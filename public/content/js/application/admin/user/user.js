@@ -61,14 +61,14 @@ Vue.component('user-management-datatable', {
 
 			window.sessionStorage.setItem("userId", userId);
 
-			window.location = "http://localhost:8080/AAA/public/views/admin/user_details.php";
+			window.location = "https://anx-it.herokuapp.com/public/views/admin/user_details.php";
 		},
 		redirectToEdit : function(userId) {
 			
 
 			window.sessionStorage.setItem("userId", userId);
 
-			window.location = "http://localhost:8080/AAA/public/views/admin/update_user.php";
+			window.location = "https://anx-it.herokuapp.com/public/views/admin/update_user.php";
 		},
 
 		deleteUser : function(userId, isActive) {
@@ -227,7 +227,7 @@ Vue.component('user-management-datatable', {
 var vm = new Vue({
     el : "#vue-user",
     data : {
-        url_root : "/AAA/public/controller/admin/user/",
+        url_root : "/public/controller/admin/user/",
 
         users: [],
 
@@ -245,7 +245,7 @@ var vm = new Vue({
 			e.preventDefault();
 
 			
-            window.location = "http://localhost:8080/AAA/public/views/admin/add_user.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/admin/add_user.php";
 		}
     },
     created() {

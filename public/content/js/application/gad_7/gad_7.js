@@ -42,7 +42,7 @@ Vue.component('gad-management-datatable', {
 
 			window.sessionStorage.setItem("gadId", gadId);
 
-			window.location = "http://localhost:8080/AAA/public/views/gad_details.php";
+			window.location = "https://anx-it.herokuapp.com/public/views/gad_details.php";
 		},
 
 		redirectToSurveyReport : function(gadId) {
@@ -50,7 +50,7 @@ Vue.component('gad-management-datatable', {
 
 			window.sessionStorage.setItem("gadId", gadId);
 
-			window.open("http://localhost:8080/AAA/public/views/gad_7_recommendation.php");
+			window.open("https://anx-it.herokuapp.com/public/views/gad_7_recommendation.php");
 		}
 	},
 	updated() {
@@ -61,7 +61,7 @@ Vue.component('gad-management-datatable', {
 var vm = new Vue({
     el : "#vue-gad-7",
     data : {
-        url_root : "/AAA/public/controller/gad_7/",
+        url_root : "/public/controller/gad_7/",
 
         gads: [],
 
@@ -88,7 +88,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/add_gad_7.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/add_gad_7.php";
 				}
 			})
 		}

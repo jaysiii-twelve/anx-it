@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-dass-recommendation",
     data : {
-        url_root : "/AAA/public/controller/dass_21/",
+        url_root : "/public/controller/dass_21/",
 
 		dassDetails : [],
 		
@@ -25,7 +25,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/dass_21.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/dass_21.php";
 				}
 			})
         },
@@ -65,7 +65,7 @@ var vm = new Vue({
 			}, 2000);
 		},
 		printPage: function() {
-			window.open("http://localhost:8080/AAA/public/views/dass_21_details_print.php");
+			window.open("https://anx-it.herokuapp.com/public/views/dass_21_details_print.php");
 		}
     },
     created() {

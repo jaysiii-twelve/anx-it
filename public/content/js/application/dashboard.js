@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-dashboard",
     data : {
-        url_root : "/AAA/public/controller/dashboard/",
+        url_root : "/public/controller/dashboard/",
 
         emailAddress : '',
         password : '',
@@ -41,13 +41,13 @@ var vm = new Vue({
 			});
         },
         redirectToGadSurvey : function() {
-            window.location = "http://localhost:8080/AAA/public/views/gad_7.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/gad_7.php";
         },
         redirectToDassSurvey : function() {
-            window.location = "http://localhost:8080/AAA/public/views/dass_21.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/dass_21.php";
         },
         redirectToKesslerSurvey : function() {
-            window.location = "http://localhost:8080/AAA/public/views/kessler_10.php";
+            window.location = "https://anx-it.herokuapp.com/public/views/kessler_10.php";
         },
 
     },

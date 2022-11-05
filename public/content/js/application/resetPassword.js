@@ -1,7 +1,7 @@
 var vm = new Vue({
     el : "#vue-reset-password",
     data : {
-        url_root : "/AAA/public/controller/resetPassword/",
+        url_root : "/public/controller/resetPassword/",
 
         emailAddress : '',
         password : '',
@@ -75,7 +75,7 @@ var vm = new Vue({
                             timer : 2000,
                             showConfirmButton : false
                         }).then(() => {
-                            window.location = "http://localhost:8080/AAA/public/views/login.php";
+                            window.location = "https://anx-it.herokuapp.com/public/views/login.php";
                         });
                     }, 1000);
                     

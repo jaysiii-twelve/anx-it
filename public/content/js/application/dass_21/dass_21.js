@@ -41,14 +41,14 @@ Vue.component('dass-management-datatable', {
 		redirectToDetails : function(dassId) {
 			window.sessionStorage.setItem("dassId", dassId);
 
-			window.location = "http://localhost:8080/AAA/public/views/dass_21_details.php";
+			window.location = "https://anx-it.herokuapp.com/public/views/dass_21_details.php";
 		},
 		redirectToSurveyReport : function(dassId) {
 			console.log(dassId);
 
 			window.sessionStorage.setItem("dassId", dassId);
 
-			window.open("http://localhost:8080/AAA/public/views/dass_21_recommendation.php");
+			window.open("https://anx-it.herokuapp.com/public/views/dass_21_recommendation.php");
 		}
 	},
 	updated() {
@@ -59,7 +59,7 @@ Vue.component('dass-management-datatable', {
 var vm = new Vue({
     el : "#vue-dass-21",
     data : {
-        url_root : "/AAA/public/controller/dass_21/",
+        url_root : "/public/controller/dass_21/",
 
         dasses: [],
 
@@ -86,7 +86,7 @@ var vm = new Vue({
 				allowOutsideClick: false
 			  }).then((result) => {
 				if(result.value) {
-					window.location = "http://localhost:8080/AAA/public/views/add_dass_21.php";
+					window.location = "https://anx-it.herokuapp.com/public/views/add_dass_21.php";
 				}
 			})
 		}
